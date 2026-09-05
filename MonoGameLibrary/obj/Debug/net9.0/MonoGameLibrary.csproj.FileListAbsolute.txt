@@ -1,0 +1,24 @@
+/Users/adamrehan/Downloads/CSE 3902/MonoGameLibrary/bin/Debug/net9.0/MonoGameLibrary.deps.json
+/Users/adamrehan/Downloads/CSE 3902/MonoGameLibrary/bin/Debug/net9.0/MonoGameLibrary.dll
+/Users/adamrehan/Downloads/CSE 3902/MonoGameLibrary/bin/Debug/net9.0/MonoGameLibrary.pdb
+/Users/adamrehan/Downloads/CSE 3902/MonoGameLibrary/obj/Debug/net9.0/MonoGameLibrary.csproj.AssemblyReference.cache
+/Users/adamrehan/Downloads/CSE 3902/MonoGameLibrary/obj/Debug/net9.0/MonoGameLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adamrehan/Downloads/CSE 3902/MonoGameLibrary/obj/Debug/net9.0/MonoGameLibrary.AssemblyInfoInputs.cache
+/Users/adamrehan/Downloads/CSE 3902/MonoGameLibrary/obj/Debug/net9.0/MonoGameLibrary.AssemblyInfo.cs
+/Users/adamrehan/Downloads/CSE 3902/MonoGameLibrary/obj/Debug/net9.0/MonoGameLibrary.csproj.CoreCompileInputs.cache
+/Users/adamrehan/Downloads/CSE 3902/MonoGameLibrary/obj/Debug/net9.0/MonoGameLibrary.dll
+/Users/adamrehan/Downloads/CSE 3902/MonoGameLibrary/obj/Debug/net9.0/refint/MonoGameLibrary.dll
+/Users/adamrehan/Downloads/CSE 3902/MonoGameLibrary/obj/Debug/net9.0/MonoGameLibrary.pdb
+/Users/adamrehan/Downloads/CSE 3902/MonoGameLibrary/obj/Debug/net9.0/ref/MonoGameLibrary.dll
+/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/bin/Debug/net9.0/MonoGameLibrary.deps.json
+/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/bin/Debug/net9.0/MonoGameLibrary.dll
+/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/bin/Debug/net9.0/MonoGameLibrary.pdb
+/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/obj/Debug/net9.0/MonoGameLibrary.csproj.AssemblyReference.cache
+/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/obj/Debug/net9.0/MonoGameLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/obj/Debug/net9.0/MonoGameLibrary.AssemblyInfoInputs.cache
+/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/obj/Debug/net9.0/MonoGameLibrary.AssemblyInfo.cs
+/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/obj/Debug/net9.0/MonoGameLibrary.csproj.CoreCompileInputs.cache
+/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/obj/Debug/net9.0/MonoGameLibrary.dll
+/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/obj/Debug/net9.0/refint/MonoGameLibrary.dll
+/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/obj/Debug/net9.0/MonoGameLibrary.pdb
+/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/obj/Debug/net9.0/ref/MonoGameLibrary.dll
