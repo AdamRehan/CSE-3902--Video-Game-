@@ -5,12 +5,13 @@ using DungeonSlime;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGameLibrary.Graphics;
+using MonoGameLibrary.Input;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 
 public class Player : IPlayer
 {
-    public Vector2 Position {get; set;}
-    public Vector2 Velocity {get; set;}
+    public Vector2 Position { get; set; }
+    public Vector2 Velocity { get; set; }
     private Animation idleAnimation;
     private Animation walkAnimation;
     private Animation currAnimation;
@@ -34,6 +35,13 @@ public class Player : IPlayer
 
     public void Draw(SpriteBatch spireBatch)
     {
-        SpriteBatch.Draw(currAnimation.Texture, Position, currAnimation.GetCurrentSourceRectangle(), Color.White);
+        if (KeyboardInfo.isLeft)
+        {
+            SpriteBatch.Draw(currAnimation.Texture, Position, currAnimation.GetCurrentSourceRectangle(), Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.FlipHorizontally, 0f);
+        }
+        else
+        {
+            SpriteBatch.Draw(currAnimation.Texture, Position, currAnimation.GetCurrentSourceRectangle(), Color.White);
+        }
     }
 }
