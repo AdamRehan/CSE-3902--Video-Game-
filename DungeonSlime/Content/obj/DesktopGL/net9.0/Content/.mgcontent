@@ -4,9 +4,9 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Owner/Desktop/Coding Projects/CSE-3902--Video-Game-/DungeonSlime/Content/images/atlas.png</File>
-    <File>C:/Users/Owner/Desktop/Coding Projects/CSE-3902--Video-Game-/DungeonSlime/Content/images/knight.png</File>
-    <File>C:/Users/Owner/Desktop/Coding Projects/CSE-3902--Video-Game-/DungeonSlime/Content/images/logo.png</File>
+    <File>/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/DungeonSlime/Content/images/atlas.png</File>
+    <File>/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/DungeonSlime/Content/images/knight.png</File>
+    <File>/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/DungeonSlime/Content/images/logo.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

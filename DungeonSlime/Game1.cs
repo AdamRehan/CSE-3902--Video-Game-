@@ -11,7 +11,7 @@ namespace DungeonSlime;
 public class Game1 : Core
 {
     // Defines the knight animated sprite.
-    private AnimatedSprite knight;
+    private Player player;
 
     // Tracks the position of the knight.
     private Vector2 knightPosition;
@@ -29,7 +29,8 @@ public class Game1 : Core
     protected override void Initialize()
     {
         // TODO: Add your initialization logic here
-
+        player = new Player();
+        player.Initialize();
         base.Initialize();
     }
 
@@ -39,8 +40,7 @@ public class Game1 : Core
         TextureAtlas atlas = TextureAtlas.FromFile(Content, "images/atlas-definition.xml");
 
         // Create the knight animated sprite from the atlas.
-        knight = atlas.CreateAnimatedSprite("knight-animation");
-        knight.Scale = new Vector2(1.0f, 1.0f);
+        player.LoadContent(atlas);
     }
 
     protected override void Update(GameTime gameTime)
@@ -48,19 +48,7 @@ public class Game1 : Core
         // Update the InputManger inside base.Update() right away.
         base.Update(gameTime);
 
-        isWalking = false;
-
-        // Check for keyboard input and handle it.
-        CheckKeyboardInput();
-
-        // Check for gamepad input and handle it.
-        CheckGamePadInput();
-
-        // Update the knight animated sprite.
-        if(isWalking)
-        {
-        knight.Update(gameTime);
-        }
+        player.Update(gameTime, Input.Keyboard);
     }
 
     private void CheckKeyboardInput()
@@ -161,7 +149,7 @@ public class Game1 : Core
         SpriteBatch.Begin(samplerState: SamplerState.PointClamp);
 
         // Draw the knight sprite.
-        knight.Draw(SpriteBatch, knightPosition);
+        player.Draw(SpriteBatch);
 
         // Always end the sprite batch when finished.
         SpriteBatch.End();
