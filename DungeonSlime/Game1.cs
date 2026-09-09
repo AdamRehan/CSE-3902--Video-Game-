@@ -105,10 +105,10 @@ public class Game1 : Core
 
     private void checkMouseInput()
     {
-        if(Input.Mouse.WasButtonJustPressed(MouseButton.Left))
+        if (Input.Mouse.WasButtonJustPressed(MouseButton.Left))
         {
-            player.position = new Vector2(Input.Mouse.Position.X - (player.width/2), Input.Mouse.Position.Y - ((player.height/2)));
-            player.velocity = Vector2.Zero;
+            Vector2 dest = new Vector2(Input.Mouse.Position.X - (player.width / 2), Input.Mouse.Position.Y - ((player.height / 2)));
+            player.teleport(dest);
         }
     }
 

@@ -15,8 +15,10 @@ public class Player : IPlayer
 
     private bool teleporting = false;
     private double teleportTimer = 0;
-    private const double teleportDuration = 240;
+    private const double teleportDuration = 400;
     
+    private Vector2 teleportDest = Vector2.Zero;
+
     //From Gemini
     public float width => currAnimation != null ? currAnimation.Width : 0f;
     public float height => currAnimation != null ? currAnimation.Height : 0f;
@@ -42,33 +44,46 @@ public class Player : IPlayer
         this.currAnimation = idleAnimation;
     }
 
+    public void teleport(Vector2 dest)
+    {
+        teleportDest = dest;
+        velocity = Vector2.Zero;
+        teleporting = true;
+        teleportTimer = 0;
+    }
+
 
     public void Update(GameTime gameTime, KeyboardInfo keyboardInfo)
     {
-        if(teleporting)
+        if (teleporting)
         {
             currAnimation = teleportAnimation;
             teleportTimer += gameTime.ElapsedGameTime.TotalMilliseconds;
-            if(teleportTimer >= teleportDuration)
+            if (teleportTimer >= teleportDuration)
             {
                 teleporting = false;
+                position = teleportDest;
+                teleportDest = Vector2.Zero;
             }
-        }
-        if (keyboardInfo.isLeft)
-        {
-            currentDir = SpriteEffects.FlipHorizontally;
-        }
-        else if (keyboardInfo.isRight)
-        {
-            currentDir = SpriteEffects.None;
-        }
-        if (velocity == Vector2.Zero)
-        {
-            currAnimation = idleAnimation;
         }
         else
         {
-            currAnimation = walkAnimation;
+            if (keyboardInfo.isLeft)
+            {
+                currentDir = SpriteEffects.FlipHorizontally;
+            }
+            else if (keyboardInfo.isRight)
+            {
+                currentDir = SpriteEffects.None;
+            }
+            if (velocity == Vector2.Zero)
+            {
+                currAnimation = idleAnimation;
+            }
+            else
+            {
+                currAnimation = walkAnimation;
+            }
         }
         //Taken from Google Gemini
         idleAnimation.Effects = currentDir;
