@@ -128,3 +128,4 @@ C:/Users/Owner/Desktop/Coding Projects/CSE-3902--Video-Game-/DungeonSlime/obj/De
 C:/Users/Owner/Desktop/Coding Projects/CSE-3902--Video-Game-/DungeonSlime/obj/Debug/net9.0/DungeonSlime.genruntimeconfig.cache
 C:/Users/Owner/Desktop/Coding Projects/CSE-3902--Video-Game-/DungeonSlime/obj/Debug/net9.0/ref/DungeonSlime.dll
 /Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/DungeonSlime/obj/Debug/net9.0/DungeonSlime.sourcelink.json
+/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/DungeonSlime/bin/Debug/net9.0/Content/MenuFont.xnb

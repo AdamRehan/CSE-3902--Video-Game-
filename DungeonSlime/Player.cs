@@ -10,8 +10,8 @@ using Vector2 = Microsoft.Xna.Framework.Vector2;
 
 public class Player : IPlayer
 {
-    public Vector2 Position { get; set; }
-    public Vector2 Velocity { get; set; }
+    public Vector2 position { get; set; }
+    public Vector2 velocity { get; set; }
 
     private SpriteEffects currentDir = SpriteEffects.None;
     private AnimatedSprite idleAnimation;
@@ -38,11 +38,11 @@ public class Player : IPlayer
         {
             currentDir = SpriteEffects.FlipHorizontally;
         }
-        else
+        else if(keyboardInfo.isRight)
         {
             currentDir = SpriteEffects.None;
         }
-        if (Velocity == Vector2.Zero)
+        if (velocity == Vector2.Zero)
         {
             currAnimation = idleAnimation;
         }
@@ -50,11 +50,17 @@ public class Player : IPlayer
         {
             currAnimation = walkAnimation;
         }
+        //Taken from Google Gemini
+        idleAnimation.Effects = currentDir;
+        walkAnimation.Effects = currentDir;
+
+        currAnimation.Effects = currentDir;
+        currAnimation.Update(gameTime);
 
     }
 
     public void Draw(SpriteBatch spriteBatch)
     {
-        currAnimation.Draw(spriteBatch, Position);
+        currAnimation.Draw(spriteBatch, position);
     }
 }

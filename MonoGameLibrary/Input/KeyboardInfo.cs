@@ -5,6 +5,7 @@ namespace MonoGameLibrary.Input;
 public class KeyboardInfo
 {
     public bool isLeft {get; private set;}
+    public bool isRight {get; private set;}
     /// <summary>
     /// Gets the state of keyboard input during the previous update cycle.
     /// </summary>
@@ -32,6 +33,7 @@ public class KeyboardInfo
         PreviousState = CurrentState;
         CurrentState = Keyboard.GetState();
         isLeft = CurrentState.IsKeyDown(Keys.A) || CurrentState.IsKeyDown(Keys.Left);
+        isRight = CurrentState.IsKeyDown(Keys.D) || CurrentState.IsKeyDown(Keys.Right);
     }
 
     /// <summary>

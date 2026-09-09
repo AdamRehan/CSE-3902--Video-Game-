@@ -9,8 +9,8 @@ namespace DungeonSlime;
 
 public interface IPlayer
 {
-    Vector2 Position {get; set;}
-    Vector2 Velocity {get; set;}
+    Vector2 position {get; set;}
+    Vector2 velocity {get; set;}
 
     void Initialize();
     void Update(GameTime gameTime, KeyboardInfo keyboardInfo);
