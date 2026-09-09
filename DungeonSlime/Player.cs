@@ -22,19 +22,19 @@ public class Player : IPlayer
     {
         currAnimation = idleAnimation;
     }
-    
+
     public void LoadContent(TextureAtlas atlas) //Method taken from Google Gemini
-{
-    // The player loads its own assets from the shared atlas reference
-    this.idleAnimation = atlas.CreateAnimatedSprite("knight-idle-animation");
-    this.walkAnimation = atlas.CreateAnimatedSprite("knight-walk-animation");
-    this.currAnimation = idleAnimation;
-}
+    {
+        // The player loads its own assets from the shared atlas reference
+        this.idleAnimation = atlas.CreateAnimatedSprite("hk-idle");
+        this.walkAnimation = atlas.CreateAnimatedSprite("hk-walk");
+        this.currAnimation = idleAnimation;
+    }
 
 
     public void Update(GameTime gameTime, KeyboardInfo keyboardInfo)
     {
-        if(keyboardInfo.isLeft)
+        if (keyboardInfo.isLeft)
         {
             currentDir = SpriteEffects.FlipHorizontally;
         }
