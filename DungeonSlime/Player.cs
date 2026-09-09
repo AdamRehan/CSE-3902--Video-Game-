@@ -13,9 +13,19 @@ public class Player : IPlayer
     public Vector2 position { get; set; }
     public Vector2 velocity { get; set; }
 
+    private bool teleporting = false;
+    private double teleportTimer = 0;
+    private const double teleportDuration = 240;
+    
+    //From Gemini
+    public float width => currAnimation != null ? currAnimation.Width : 0f;
+    public float height => currAnimation != null ? currAnimation.Height : 0f;
+
+
     private SpriteEffects currentDir = SpriteEffects.None;
     private AnimatedSprite idleAnimation;
     private AnimatedSprite walkAnimation;
+    private AnimatedSprite teleportAnimation;
     private AnimatedSprite currAnimation;
 
     public void Initialize()
@@ -28,17 +38,27 @@ public class Player : IPlayer
         // The player loads its own assets from the shared atlas reference
         this.idleAnimation = atlas.CreateAnimatedSprite("hk-idle");
         this.walkAnimation = atlas.CreateAnimatedSprite("hk-walk");
+        this.teleportAnimation = atlas.CreateAnimatedSprite("hk-teleport");
         this.currAnimation = idleAnimation;
     }
 
 
     public void Update(GameTime gameTime, KeyboardInfo keyboardInfo)
     {
+        if(teleporting)
+        {
+            currAnimation = teleportAnimation;
+            teleportTimer += gameTime.ElapsedGameTime.TotalMilliseconds;
+            if(teleportTimer >= teleportDuration)
+            {
+                teleporting = false;
+            }
+        }
         if (keyboardInfo.isLeft)
         {
             currentDir = SpriteEffects.FlipHorizontally;
         }
-        else if(keyboardInfo.isRight)
+        else if (keyboardInfo.isRight)
         {
             currentDir = SpriteEffects.None;
         }

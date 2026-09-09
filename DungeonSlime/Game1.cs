@@ -56,7 +56,7 @@ public class Game1 : Core
         // Update the InputManger inside base.Update() right away.
         base.Update(gameTime);
         CheckKeyboardInput();
-        CheckGamePadInput();
+        checkMouseInput();
         player.Update(gameTime, Input.Keyboard);
     }
 
@@ -103,56 +103,12 @@ public class Game1 : Core
         player.position += player.velocity;
     }
 
-    private void CheckGamePadInput()
+    private void checkMouseInput()
     {
-        GamePadInfo gamePadOne = Input.GamePads[(int)PlayerIndex.One];
-
-        // If the A button is held down, the movement speed increases by 1.5
-        // and the gamepad vibrates as feedback to the player.
-        float speed = MOVEMENT_SPEED;
-        if (gamePadOne.IsButtonDown(Buttons.A))
+        if(Input.Mouse.WasButtonJustPressed(MouseButton.Left))
         {
-            speed *= 1.5f;
-            gamePadOne.SetVibration(1.0f, TimeSpan.FromSeconds(1));
-        }
-        else
-        {
-            gamePadOne.StopVibration();
-        }
-
-        // Check thumbstick first since it has priority over which gamepad input
-        // is movement.  It has priority since the thumbstick values provide a
-        // more granular analog value that can be used for movement.
-        if (gamePadOne.LeftThumbStick != Vector2.Zero)
-        {
-            knightPosition.X += gamePadOne.LeftThumbStick.X * speed;
-            knightPosition.Y -= gamePadOne.LeftThumbStick.Y * speed;
-        }
-        else
-        {
-            // If DPadUp is down, move the knight up on the screen.
-            if (gamePadOne.IsButtonDown(Buttons.DPadUp))
-            {
-                knightPosition.Y -= speed;
-            }
-
-            // If DPadDown is down, move the knight down on the screen.
-            if (gamePadOne.IsButtonDown(Buttons.DPadDown))
-            {
-                knightPosition.Y += speed;
-            }
-
-            // If DPapLeft is down, move the knight left on the screen.
-            if (gamePadOne.IsButtonDown(Buttons.DPadLeft))
-            {
-                knightPosition.X -= speed;
-            }
-
-            // If DPadRight is down, move the knight right on the screen.
-            if (gamePadOne.IsButtonDown(Buttons.DPadRight))
-            {
-                knightPosition.X += speed;
-            }
+            player.position = new Vector2(Input.Mouse.Position.X - (player.width/2), Input.Mouse.Position.Y - ((player.height/2)));
+            player.velocity = Vector2.Zero;
         }
     }
 
