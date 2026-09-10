@@ -37,7 +37,6 @@ public class Player : IPlayer
 
     public void LoadContent(TextureAtlas atlas) //Method taken from Google Gemini
     {
-        // The player loads its own assets from the shared atlas reference
         this.idleAnimation = atlas.CreateAnimatedSprite("hk-idle");
         this.walkAnimation = atlas.CreateAnimatedSprite("hk-walk");
         this.teleportAnimation = atlas.CreateAnimatedSprite("hk-teleport");

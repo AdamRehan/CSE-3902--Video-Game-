@@ -34,7 +34,6 @@ public class Game1 : Core
 
     protected override void Initialize()
     {
-        // TODO: Add your initialization logic here
         player = new Player();
         player.Initialize();
         base.Initialize();
@@ -62,7 +61,6 @@ public class Game1 : Core
 
     private void CheckKeyboardInput()
     {
-        // If the space key is held down, the movement speed increases by 1.5
         float speed = MOVEMENT_SPEED;
         if (Input.Keyboard.IsKeyDown(Keys.Space))
         {
@@ -70,12 +68,11 @@ public class Game1 : Core
         }
 
         Vector2 newVelocity = player.velocity;
-        // If the W or Up keys are down, move the knight up on the screen.
+
         if (Input.Keyboard.IsKeyDown(Keys.W) || Input.Keyboard.IsKeyDown(Keys.Up))
         {
             newVelocity.Y = -speed;
         }
-        // if the S or Down keys are down, move the knight down on the screen.
         else if (Input.Keyboard.IsKeyDown(Keys.S) || Input.Keyboard.IsKeyDown(Keys.Down))
         {
             newVelocity.Y = speed;
@@ -85,12 +82,10 @@ public class Game1 : Core
             newVelocity.Y = 0;
         }
 
-        // If the A or Left keys are down, move the knight left on the screen.
         if (Input.Keyboard.isLeft)
         {
             newVelocity.X = -speed;
         }
-        // If the D or Right keys are down, move the knight right on the screen.
         else if (Input.Keyboard.IsKeyDown(Keys.D) || Input.Keyboard.IsKeyDown(Keys.Right))
         {
             newVelocity.X = speed;
