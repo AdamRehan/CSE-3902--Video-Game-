@@ -4,10 +4,10 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/DungeonSlime/Content/images/atlas.png</File>
-    <File>/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/DungeonSlime/Content/images/knight.png</File>
-    <File>/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/DungeonSlime/Content/images/logo.png</File>
-    <File>/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/DungeonSlime/Content/MenuFont.spritefont</File>
+    <File>/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/DungeonSlime/Content/images/atlas.png</File>
+    <File>/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/DungeonSlime/Content/images/knight.png</File>
+    <File>/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/DungeonSlime/Content/images/logo.png</File>
+    <File>/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/DungeonSlime/Content/MenuFont.spritefont</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/DungeonSlime/DungeonSlime.csproj": {}
+    "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/DungeonSlime/DungeonSlime.csproj": {}
   },
   "projects": {
-    "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/DungeonSlime/DungeonSlime.csproj": {
+    "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/DungeonSlime/DungeonSlime.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/DungeonSlime/DungeonSlime.csproj",
+        "projectUniqueName": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/DungeonSlime/DungeonSlime.csproj",
         "projectName": "DungeonSlime",
-        "projectPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/DungeonSlime/DungeonSlime.csproj",
+        "projectPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/DungeonSlime/DungeonSlime.csproj",
         "packagesPath": "/Users/adamrehan/.nuget/packages/",
-        "outputPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/DungeonSlime/obj/",
+        "outputPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/DungeonSlime/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/adamrehan/.nuget/NuGet/NuGet.Config"
@@ -27,8 +27,8 @@
             "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/MonoGameLibrary.csproj": {
-                "projectPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/MonoGameLibrary.csproj"
+              "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/MonoGameLibrary/MonoGameLibrary.csproj": {
+                "projectPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/MonoGameLibrary/MonoGameLibrary.csproj"
               }
             }
           }
@@ -93,14 +93,14 @@
         }
       }
     },
-    "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/MonoGameLibrary.csproj": {
+    "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/MonoGameLibrary/MonoGameLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/MonoGameLibrary.csproj",
+        "projectUniqueName": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/MonoGameLibrary/MonoGameLibrary.csproj",
         "projectName": "MonoGameLibrary",
-        "projectPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/MonoGameLibrary.csproj",
+        "projectPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/MonoGameLibrary/MonoGameLibrary.csproj",
         "packagesPath": "/Users/adamrehan/.nuget/packages/",
-        "outputPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/MonoGameLibrary/obj/",
+        "outputPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/MonoGameLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/adamrehan/.nuget/NuGet/NuGet.Config"
