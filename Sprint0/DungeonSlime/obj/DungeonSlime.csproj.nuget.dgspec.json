@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/DungeonSlime/DungeonSlime.csproj": {}
+    "C:\\Users\\Owner\\Desktop\\Coding Projects\\CSE-3902--Video-Game-\\Sprint0\\DungeonSlime\\DungeonSlime.csproj": {}
   },
   "projects": {
-    "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/DungeonSlime/DungeonSlime.csproj": {
+    "C:\\Users\\Owner\\Desktop\\Coding Projects\\CSE-3902--Video-Game-\\Sprint0\\DungeonSlime\\DungeonSlime.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/DungeonSlime/DungeonSlime.csproj",
+        "projectUniqueName": "C:\\Users\\Owner\\Desktop\\Coding Projects\\CSE-3902--Video-Game-\\Sprint0\\DungeonSlime\\DungeonSlime.csproj",
         "projectName": "DungeonSlime",
-        "projectPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/DungeonSlime/DungeonSlime.csproj",
-        "packagesPath": "/Users/adamrehan/.nuget/packages/",
-        "outputPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/DungeonSlime/obj/",
+        "projectPath": "C:\\Users\\Owner\\Desktop\\Coding Projects\\CSE-3902--Video-Game-\\Sprint0\\DungeonSlime\\DungeonSlime.csproj",
+        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Owner\\Desktop\\Coding Projects\\CSE-3902--Video-Game-\\Sprint0\\DungeonSlime\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/adamrehan/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -24,11 +24,10 @@
         },
         "frameworks": {
           "net9.0": {
-            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/MonoGameLibrary/MonoGameLibrary.csproj": {
-                "projectPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/MonoGameLibrary/MonoGameLibrary.csproj"
+              "C:\\Users\\Owner\\Desktop\\Coding Projects\\CSE-3902--Video-Game-\\Sprint0\\MonoGameLibrary\\MonoGameLibrary.csproj": {
+                "projectPath": "C:\\Users\\Owner\\Desktop\\Coding Projects\\CSE-3902--Video-Game-\\Sprint0\\MonoGameLibrary\\MonoGameLibrary.csproj"
               }
             }
           }
@@ -43,11 +42,10 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
-          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
             "MonoGame.Content.Builder.Task": {
@@ -70,40 +68,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.19, 9.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-arm64",
-              "version": "[9.0.19, 9.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.19, 9.0.19]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.317/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/MonoGameLibrary/MonoGameLibrary.csproj": {
+    "C:\\Users\\Owner\\Desktop\\Coding Projects\\CSE-3902--Video-Game-\\Sprint0\\MonoGameLibrary\\MonoGameLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/MonoGameLibrary/MonoGameLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Owner\\Desktop\\Coding Projects\\CSE-3902--Video-Game-\\Sprint0\\MonoGameLibrary\\MonoGameLibrary.csproj",
         "projectName": "MonoGameLibrary",
-        "projectPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/MonoGameLibrary/MonoGameLibrary.csproj",
-        "packagesPath": "/Users/adamrehan/.nuget/packages/",
-        "outputPath": "/Users/adamrehan/Desktop/School Work/AU 26/CSE 3902 (Video Game)/Sprint0/MonoGameLibrary/obj/",
+        "projectPath": "C:\\Users\\Owner\\Desktop\\Coding Projects\\CSE-3902--Video-Game-\\Sprint0\\MonoGameLibrary\\MonoGameLibrary.csproj",
+        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Owner\\Desktop\\Coding Projects\\CSE-3902--Video-Game-\\Sprint0\\MonoGameLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/adamrehan/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -113,7 +97,6 @@
         },
         "frameworks": {
           "net9.0": {
-            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {}
           }
@@ -128,11 +111,10 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
-          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
             "MonoGame.Framework.DesktopGL": {
@@ -152,22 +134,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.19, 9.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.19, 9.0.19]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.317/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
