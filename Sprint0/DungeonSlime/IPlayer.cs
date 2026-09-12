@@ -11,7 +11,6 @@ public interface IPlayer
 {
     Vector2 position {get; set;}
     Vector2 velocity {get; set;}
-
     void Initialize();
     void Update(GameTime gameTime, KeyboardInfo keyboardInfo);
     void Draw(SpriteBatch spriteBatch);

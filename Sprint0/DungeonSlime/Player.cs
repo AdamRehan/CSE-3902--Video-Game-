@@ -13,18 +13,20 @@ public class Player : IPlayer
     public Vector2 position { get; set; }
     public Vector2 velocity { get; set; }
 
+    //All necessary for teleporting
     private bool teleporting = false;
     private double teleportTimer = 0;
     private const double teleportDuration = 400;
-    
     private Vector2 teleportDest = Vector2.Zero;
 
     //From Gemini
     public float width => currAnimation != null ? currAnimation.Width : 0f;
     public float height => currAnimation != null ? currAnimation.Height : 0f;
 
-
+    //For flipping character model when moving left
     private SpriteEffects currentDir = SpriteEffects.None;
+
+    //Animations
     private AnimatedSprite idleAnimation;
     private AnimatedSprite walkAnimation;
     private AnimatedSprite teleportAnimation;

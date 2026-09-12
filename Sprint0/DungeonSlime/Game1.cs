@@ -6,17 +6,15 @@ using Microsoft.Xna.Framework.Input;
 using MonoGameLibrary;
 using MonoGameLibrary.Graphics;
 using MonoGameLibrary.Input;
+//Taken from Gemini, was having errors where it didn't know which Vector2 to use
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 
 namespace DungeonSlime;
 
 public class Game1 : Core
 {
-    // Defines the knight animated sprite.
+    // Defines the Player.
     private Player player;
-
-    // Tracks the position of the knight.
-    private Vector2 knightPosition;
 
     //Menu font stuff
     SpriteFont font1;
@@ -25,9 +23,7 @@ public class Game1 : Core
     // Speed multiplier when moving.
     private const float MOVEMENT_SPEED = 5.0f;
 
-
-
-    public Game1() : base("Dungeon Slime", 1280, 720, false)
+    public Game1() : base("Sprint 0", 1280, 720, false)
     {
 
     }
@@ -62,13 +58,15 @@ public class Game1 : Core
     private void CheckKeyboardInput()
     {
         float speed = MOVEMENT_SPEED;
+        
+        //Increasing speed when space bar pressed
         if (Input.Keyboard.IsKeyDown(Keys.Space))
         {
             speed *= 1.5f;
         }
 
+        //Checking up, down, left, right movement inputs respectively 
         Vector2 newVelocity = player.velocity;
-
         if (Input.Keyboard.IsKeyDown(Keys.W) || Input.Keyboard.IsKeyDown(Keys.Up))
         {
             newVelocity.Y = -speed;
@@ -100,6 +98,7 @@ public class Game1 : Core
 
     private void checkMouseInput()
     {
+        //Code for making player teleport, centered on mouse click
         if (Input.Mouse.WasButtonJustPressed(MouseButton.Left))
         {
             Vector2 dest = new Vector2(Input.Mouse.Position.X - (player.width / 2), Input.Mouse.Position.Y - ((player.height / 2)));
